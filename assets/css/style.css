@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    padding-top: 80px; /* laisse la place au bandeau */
+    padding-top: 80px;
     font-family: verdana;
     background: radial-gradient(circle at center, #1a1a40, #0d0d1a, #000);
     display: flex;
@@ -30,12 +30,12 @@ body {
 
 #bandeau {
     width: 100%;
-    padding: 15px 15px;     /* Gris très foncé, style pro */
+    padding: 15px 15px;
     display: flex;
-    justify-content: space-between;      /* Aligne les boutons à droite */
+    justify-content: space-between;
     align-items: center;
-    gap: 2px;                      /* Espacement entre les boutons */
-    position: fixed;                /* Bandeau toujours visible */
+    gap: 2px; 
+    position: fixed;          
     top: 0;
     left: 0;
     z-index: 100;
@@ -84,7 +84,7 @@ body {
   margin: 20px auto;
   margin-top: 20px;
   align-items: flex-start;
-  flex-wrap: nowrap; /* empêche les enfants de passer à la ligne */
+  flex-wrap: nowrap;
 }
 
 .text-menu {
@@ -155,32 +155,30 @@ body {
 
 
 /* AboutMe*/
-/* Div principale About Me */
 #aboutMe {
   scroll-margin-top: 30vh;
     display: flex;
-    flex-direction: column; /* tout est en colonne pour commencer */
-    align-items: center;    /* titre centré */
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
     max-width: 1000px;
 }
 
-/* Titre centré */
 .about_title {
     font-size: 2.5em;
     margin-top: 150px;
     color: white;
     text-align: center;
 }
-/* Contenu en ligne : image + texte */
+
 #divAboutMe {
   scroll-margin-top: 30vh;
     display: flex;
-    flex-direction: row; /* image à gauche, texte à droite */
+    flex-direction: row;
     align-items: center;
     gap: 50px;
     width: 100%;
-    flex-wrap: nowrap; /* responsive sur petit écran */
+    flex-wrap: nowrap;
 }
 .title_personeni {
   color: cyan
@@ -195,12 +193,11 @@ body {
   transform: translateY(-5px);
 }
 
-/* Texte à côté de l’image */
 .about_text {
     color: white;
     font-size: 1.2em;
     line-height: 1.6;
-    flex: 1; /* prend tout l’espace restant */
+    flex: 1;
     font-weight: normal;
 }
 .txt_aboutMe{
@@ -208,26 +205,26 @@ body {
   font-size: smaller;
 }
 .btn-cyan {
-    display: inline-block;       /* Important pour que le <a> se comporte comme un bloc */
-    text-decoration: none;       /* Enlève le soulignement moche */
-    color: cyan;                 /* Couleur du texte */
-    border: 2px solid cyan;      /* Le contour */
-    padding: 10px 25px;          /* Espace intérieur (Haut/Bas Gauche/Droite) */
-    font-family: sans-serif;     /* Police propre */
-    font-weight: bold;           /* Texte en gras */
-    text-transform: uppercase;   /* Tout en majuscule (plus "pro") */
-    letter-spacing: 1px;         /* Espace un peu les lettres */
-    transition: all 0.3s ease;   /* Animation fluide au survol */
-    background: transparent;     /* Fond transparent par défaut */
+    display: inline-block;      
+    text-decoration: none;      
+    color: cyan;               
+    border: 2px solid cyan;    
+    padding: 10px 25px;         
+    font-family: sans-serif;    
+    font-weight: bold;          
+    text-transform: uppercase;  
+    letter-spacing: 1px;        
+    transition: all 0.3s ease;  
+    background: transparent;  
     cursor: pointer;
     border-radius: 10px;
 }
 
-/* Effet au survol de la souris */
+
 .btn-cyan:hover {
-    background-color: cyan;      /* Le fond devient cyan */
-    color: #000;                 /* Le texte devient noir pour le contraste */
-    box-shadow: 0 0 15px cyan;   /* Petit effet de lueur (glow) */
+    background-color: cyan;      
+    color: #000;                 
+    box-shadow: 0 0 15px cyan;   
 }
 
 
@@ -343,7 +340,7 @@ body {
     border-radius: 8px;
      mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
   
-  /* Pour la compatibilité (Chrome, Safari, Edge) */
+ 
   -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
   }
 
@@ -357,9 +354,9 @@ body {
 
   .but_project:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff; /* texte un peu plus doux */
+    color: #ffffff; 
     border-color: #00ffffa8;
-    transform: translateY(-2px); /* petit effet de soulèvement */
+    transform: translateY(-2px); 
     filter: grayscale(100%) brightness(0.8);
   }
   .txt_but_project {
@@ -370,7 +367,7 @@ body {
     color: white;
     font-size: 2em;
     text-shadow: 0 0 10px #000;
-    display: none; /* caché par défaut */
+    display: none; 
     text-align: center;
     z-index: 2;
   }
@@ -379,7 +376,7 @@ body {
     display: block;
   }
 
-  /* (Optionnel) effet de fondu */
+ 
   .txt_but_project {
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -397,7 +394,7 @@ body {
     flex-direction: column;
     align-items:start;
     flex-wrap: nowrap;
-    gap: 20px; /* optionnel pour espacer */
+    gap: 20px;
   }
 
   .project_title {
@@ -454,26 +451,25 @@ body {
 }
 
 .btn-filter {
-    display: inline-block;       /* Important pour que le <a> se comporte comme un bloc */
-    text-decoration: none;       /* Enlève le soulignement moche */
-    color: cyan;                 /* Couleur du texte */
-    border: 2px solid cyan;      /* Le contour */
-    padding: 10px 25px;          /* Espace intérieur (Haut/Bas Gauche/Droite) */
-    font-family: sans-serif;     /* Police propre */
-    font-weight: bold;           /* Texte en gras */
-    text-transform: uppercase;   /* Tout en majuscule (plus "pro") */
-    letter-spacing: 1px;         /* Espace un peu les lettres */
-    transition: all 0.3s ease;   /* Animation fluide au survol */
-    background: transparent;     /* Fond transparent par défaut */
+    display: inline-block;      
+    text-decoration: none;      
+    color: cyan;                 
+    padding: 10px 25px;         
+    font-family: sans-serif;     
+    font-weight: bold;           
+    text-transform: uppercase;  
+    letter-spacing: 1px;       
+    transition: all 0.3s ease; 
+    background: transparent;
     cursor: pointer;
     border-radius: 10px;
 }
 
-/* Effet au survol de la souris */
+
 .btn-filter:hover {
-    background-color: cyan;      /* Le fond devient cyan */
-    color: #000;                 /* Le texte devient noir pour le contraste */
-    box-shadow: 0 0 15px cyan;   /* Petit effet de lueur (glow) */
+    background-color: cyan;      
+    color: #000;                
+    box-shadow: 0 0 15px cyan;  
 }
 .select{
   background-color: cyan;
@@ -521,7 +517,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background: cyan; /* Couleur de la ligne verticale */
+    background: cyan; 
     border-radius: 10px;
 }
 
@@ -551,7 +547,7 @@ body {
 
 /* Experience */
 #experience {
-    display: flex; /* ou 'none' si tu veux le cacher au début */
+    display: flex; 
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
@@ -565,34 +561,32 @@ body {
     text-align: center;
 }
 
-/* Grille des 3 zones */
+
 .experience-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Pour que ça passe à la ligne sur petit écran */
+    flex-wrap: wrap;
     max-width: 1200px;
 }
 
-/* Style de la Carte (Zone) */
 .experience-card {
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
+    background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid cyan;
     border-radius: 15px;
-    width: 300px; /* Largeur fixe pour alignement propre */
+    width: 300px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
-/* Effet au survol */
+
 .experience-card:hover {
-    transform: translateY(-10px); /* La carte monte un peu */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* Lueur cyan */
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); 
 }
 
-/* Gestion de l'image */
 .img-container {
     width: 100%;
     height: 180px;
@@ -603,15 +597,15 @@ body {
 .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* L'image remplit la zone sans se déformer */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
 .experience-card:hover .img-container img {
-    transform: scale(1.1); /* Zoom léger sur l'image au survol */
+    transform: scale(1.1); 
 }
 
-/* Contenu textuel */
+
 .card-content {
     padding: 20px;
     color: white;
@@ -620,7 +614,7 @@ body {
 
 .card-content .date {
     font-size: 0.85rem;
-    color: cyan; /* Date en cyan pour ressortir */
+    color: cyan;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -665,51 +659,49 @@ body {
     text-align: center;
 }
 
-/* Style du formulaire */
 .contact-form {
     width: 100%;
-    max-width: 600px; /* Largeur max pour que ça reste beau sur PC */
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espace entre les champs */
+    gap: 20px;
 }
 
-/* Style des champs (Input et Textarea) */
+
 .contact-form input, 
 .contact-form textarea {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
-    border: 1px solid #333; /* Bordure discrète au repos */
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 1px solid #333; 
     border-radius: 5px;
     padding: 15px;
     color: white;
     font-family: sans-serif;
     font-size: 1rem;
-    outline: none; /* Enlève le contour bleu moche par défaut */
+    outline: none;
     transition: all 0.3s ease;
 }
 
-/* Quand on clique dans le champ */
+
 .contact-form input:focus, 
 .contact-form textarea:focus {
-    border-color: cyan; /* La bordure devient cyan */
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); /* Petite lueur */
+    border-color: cyan;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); 
 }
 
-/* Style du placeholder (le texte gris dedans) */
+
 .contact-form input::placeholder, 
 .contact-form textarea::placeholder {
     color: #aaa;
     font-style: italic;
 }
 
-/* Ajustement spécifique pour la zone de texte */
+
 .contact-form textarea {
-    resize: vertical; /* Permet à l'utilisateur d'agrandir en hauteur seulement */
+    resize: vertical;
     min-height: 150px;
 }
 
-/* Réutilisation de ton bouton (au cas où tu n'as pas le CSS sous la main) */
 .btn-cyan {
     padding: 12px 30px;
     background: transparent;
@@ -720,7 +712,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
     font-size: 1rem;
-    align-self: flex-start; /* Aligne le bouton à gauche (ou 'center' pour centrer) */
+    align-self: flex-start; 
 }
 
 .btn-cyan:hover {
@@ -800,7 +792,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 100%) {
     .footer_container {
         flex-direction: column;

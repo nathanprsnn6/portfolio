@@ -798,3 +798,130 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+
+    #bandeau {
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .div_but_bandeau {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .but_bandeau {
+        margin-right: 0;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .home_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home_dev {
+        height: auto;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .div_home_reseau {
+        justify-content: center;
+    }
+
+    #divAboutMe {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about_img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Technical Skills */
+    #technicalSkill_Row {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .test {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .content_project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div_but_project {
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .but_project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .txt_content {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .experience-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        width: 90%;
+    }
+
+    #education ul {
+        padding-left: 20px;
+    }
+
+    .about_title, .technicalSkill_title, .project_title, 
+    .education_title, .experience_title, .contact-title {
+        margin-top: 50px;
+        font-size: 1.8em;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+}

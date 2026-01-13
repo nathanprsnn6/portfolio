@@ -27,7 +27,7 @@ I have always been a curious person, which is exactly why I fell in love with de
 ---
 
 ### 📫 Let's connect!
-- **LinkedIn:** [Nathan Personeni]([https://www.linkedin.com/in/votre-profil](https://www.linkedin.com/in/nathan-personeni-439563361/)) 
-- **Portfolio:** [Check out my work here](https://votre-portfolio.com)
+- **LinkedIn:** [Nathan Personeni](https://www.linkedin.com/in/nathan-personeni-439563361/)
+- **Portfolio:** [Check out my work here](https://nathanprsnn6.github.io/portfolio/)
 
 *"The best way to predict the future is to invent it."*
